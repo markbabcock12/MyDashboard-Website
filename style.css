@@ -412,3 +412,17 @@ body {
     max-width: 180px;
   }
 }
+
+.logo img {
+  height: 60px;
+  width: auto;
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 32px;
+  }
+}
