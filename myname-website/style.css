@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  header .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #111;
+  }
+  
+  nav a {
+    color: #333;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #0078ff;
+  }
+  
+  .hero {
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    min-height: 80vh;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: gray;
+  }
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+   
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color:#111;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    line-height: 1.6;
+    color: #5f5f55;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #fe5c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #005fcc;
+  }
+
+  .resume-page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    line-height: 1.6;
+    color: #333333;
+  }
+  
+  .resume-page h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+  }
+  
+  .resume-page h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .resume-page p, 
+  .resume-page li {
+    color: #5F5F55;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-page ul {
+    margin-left: 1.5rem;
+  }
+  
+  .resume-page a.cta-btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #fe5c00;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .resume-page a.cta-btn:hover {
+    background-color: #005fcc;
+  }
+  
+  .resume-page a {
+    color: #0078ff;
+    text-decoration: none;
+  }
+  
+  .resume-page a:hover {
+    text-decoration: underline;
+  }
+  
+  .llm-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .llm-page img {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .llm-page h1 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 1rem;
+  }
+  
+  .llm-page p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+ 
+  /* === Games Page Updates === */
+
+.games-page {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  .games-page h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+    text-align: center;
+  }
+  
+  .games-page p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .games-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Typing + Maze side by side */
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  /* Game Card Styling */
+  .game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px; /* keeps cards similar size */
+  }
+  
+  .game-card h2 {
+    margin-bottom: 0.5rem;
+    color: #111;
+    text-align: center;
+  }
+  
+  .game-card p {
+    margin-bottom: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Typing Game */
+  .word-display {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #e8e8e8;
+    border-radius: 6px;
+    min-height: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #word-input {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .result {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #0a66c2;
+  }
+  
+  #time-select {
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Maze Game */
+  #maze-game {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    border: 2px solid #0a66c2;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 900px) {
+    .games-grid {
+      grid-template-columns: 1fr; /* stack on smaller screens */
+    }
+  }
+  
+    #maze-game {
+      height: 350px;
+    }
+  
+  @media (max-width: 500px) {
+    #maze-game {
+      height: 300px;
+    }
+  }
+  
+  .maze-result {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: green;
+    min-height: 24px; /* keeps space even if empty */
+    text-align: center;
+  }
+  

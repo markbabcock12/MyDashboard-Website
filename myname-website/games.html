@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mark Babcock | Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mark Babcock</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="games.html" class="active">Games</a>
+      <a href="LLM.html">LLM Coming Soon!</a>
+      <a href="https://www.linkedin.com/in/mark-babcock-/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2" width="24px" height="24px">
+          <path d="M22.23 0H1.77C.79 0 0 .774 0 1.728v20.543C0 23.225.79 24 1.77 24h20.46c.98 0 1.77-.774 1.77-1.728V1.728C24 .774 23.21 0 22.23 0zM7.06 20.452H3.539V9h3.522v11.452zM5.3 7.548a2.04 2.04 0 1 1 0-4.08 2.04 2.04 0 0 1 0 4.08zM20.452 20.452h-3.522v-5.631c0-1.344-.027-3.07-1.872-3.07-1.872 0-2.158 1.463-2.158 2.976v5.725H9.878V9h3.379v1.561h.048c.471-.893 1.623-1.833 3.341-1.833 3.572 0 4.232 2.352 4.232 5.406v6.818z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="games-page">
+    <h1>Games</h1>
+    <p>Try out my fun web games below!</p>
+
+    <div class="games-grid">
+      <!-- Typing Speed Game -->
+      <div class="game-card">
+        <h2>Typing Speed Challenge</h2>
+        <p>Type cybersecurity words as fast as you can!</p>
+        <div id="typing-game-container">
+          <div id="word-display" class="word-display"></div>
+          <input type="text" id="word-input" placeholder="Start typing..." autofocus>
+          
+          <label for="time-select">Choose time:</label>
+          <select id="time-select">
+            <option value="30">30 seconds</option>
+            <option value="60" selected>60 seconds</option>
+          </select>
+          
+          <button id="start-btn" class="cta-btn">Start Game</button>
+          <div id="result" class="result"></div>
+        </div>
+      </div>
+
+      <!-- Cyber Maze Game -->
+      <div class="game-card">
+        <h2>Cyber Maze</h2>
+        <p>Navigate through the network maze and avoid malware!</p>
+        <p>Use arrow keys to move. Reach the green square to win!</p>
+        <canvas id="maze-game"></canvas>
+        <div id="maze-result" class="maze-result"></div>
+      </div>
+    </div>
+    
+    <script src="typing-game.js"></script>
+    <script src="maze-game.js"></script>
+  </main>
+
+  <footer>
+    <p>© 2025 Mark Babcock</p>
+  </footer>
+</body>
+</html>
